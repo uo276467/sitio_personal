@@ -1,0 +1,32 @@
+/* Especifidad 0 0 1 */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Especifidad 0 0 1 */
+main {
+    flex: 1;
+}
+
+/* Especifidad 0 0 1 */
+nav {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+}
+
+/* Especifidad 0 0 1 */
+aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Especifidad 0 0 1 */
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

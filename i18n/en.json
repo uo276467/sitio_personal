@@ -1,0 +1,81 @@
+{
+  "banner": "Personal web page",
+  "nav": {
+    "home": "Home",
+    "hobbies": "Hobbies",
+    "technologies": "Technologies",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "label": "Search the site",
+    "submit": "Search",
+    "results_title": "Search results",
+    "empty_query": "Enter a search term in the field above.",
+    "no_results": "No matches found."
+  },
+  "index": {
+    "page_title": "Home",
+    "breadcrumb": "You are at: ",
+    "about_me": "About me",
+    "about_text": "Hello! I'm Daniel Suárez. I was born in Gijón on February 6, 2001. Since childhood, I have loved computers and videogames, which is why I decided to study Software Engineering. I am currently pursuing a Master's degree in Web Engineering at the University of Oviedo.",
+    "personal_data": "Personal data",
+    "full_name": "Full name: Daniel Suárez de la Roza",
+    "birth_date": "Date of birth: February 6, 2001",
+    "birth_place": "Place of birth: Gijón, Asturias",
+    "age": "Age: 24 years old",
+    "email": "Email: danisrzly@gmail.com",
+    "presentation_video": "Presentation video",
+    "profile_photo": "Photo of Daniel Suárez"
+  },
+  "hobbies": {
+    "page_title": "Hobbies",
+    "breadcrumb_home": "Home",
+    "heading": "Hobbies",
+    "intro": "My main hobby is videogames. I also like watching series and films, listening to music, and spending time with friends.",
+    "videogames": "Videogames",
+    "videogames_image": "Image of the videogame The Legend of Zelda: Tears of the Kingdom",
+    "series_and_movies": "Series and films",
+    "series_image": "Image of the series One Piece"
+  },
+  "technologies": {
+    "page_title": "Technologies",
+    "breadcrumb_home": "Home",
+    "heading": "Technologies I'm interested in",
+    "intro": "Here are some interesting technologies I have worked with or would like to work with.",
+    "graphql": "GraphQL",
+    "graphql_desc": "GraphQL is a query language and runtime developed by Facebook that allows clients to request exactly the data they need from an API, no more and no less. Unlike REST, it reduces the overhead of multiple requests and makes communication between client and server more efficient, offering flexibility and better performance in data consumption.",
+    "graphql_logo": "GraphQL logo",
+    "react": "React",
+    "react_desc": "React is a JavaScript library developed by Meta for building user interfaces in a declarative and efficient way. It is based on reusable components and a reactive update system that facilitates the creation of dynamic and scalable web applications.",
+    "react_logo": "React logo",
+    "tailwind": "Tailwind CSS",
+    "tailwind_desc": "Tailwind CSS is a utility-first CSS framework that allows you to design interfaces quickly using predefined classes directly in HTML. It offers great flexibility and avoids writing extensive custom stylesheets, speeding up development and keeping code cleaner.",
+    "tailwind_logo": "Tailwind CSS logo",
+    "docker": "Docker",
+    "docker_desc": "Docker is a platform that allows you to package applications and their dependencies into lightweight, portable containers. These containers ensure that software runs consistently across any environment, facilitating deployment, scalability, and integration into modern development workflows.",
+    "docker_logo": "Docker logo"
+  },
+  "education": {
+    "page_title": "Education",
+    "breadcrumb_home": "Home",
+    "heading": "Education and work experience",
+    "education_title": "Education",
+    "degree": "Degree in Software Engineering",
+    "master": "Master's in Web Engineering",
+    "experience_title": "Work experience",
+    "internship": "Internship at GooApps S.L. (2025)"
+  },
+  "contact": {
+    "page_title": "Contact",
+    "breadcrumb_home": "Home",
+    "heading": "Contact me",
+    "email_label": "Email: ",
+    "phone_label": "Phone: "
+  },
+  "footer": {
+    "copyright": "© Daniel Suárez de la Roza",
+    "email": "danisrzly@gmail.com"
+  }
+}

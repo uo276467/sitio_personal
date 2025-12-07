@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Daniel Suárez de la Roza"/>
+    <meta name="description" content="Página personal de Daniel"/>
+    <meta name="keywords" content="Daniel, datos, información, aficiones"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://t.contentsquare.net/uxa/d3141bb8831b3.js"></script>
+
+    <title>Página personal</title>
+</head>
+
+<script type="module">
+
+import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+
+/**
+ * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+ * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+ */
+window.addEventListener("DOMContentLoaded", () => {
+   const debugMode = false;
+   const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+   const forceRun = false;
+
+   const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+});
+
+document.getElementById('button-finish-test').addEventListener("click", () => reSdk.finishEyeTrackingTest())
+
+</script>
+
+<body>
+    <header>
+        <h1 data-i18n="banner">Página personal</h1>
+        <nav>
+            <a href="index.html" title="Inicio" data-i18n="nav.home">Inicio</a>
+            <a href="aficiones.html" title="Aficiones" data-i18n="nav.hobbies">Aficiones</a>
+            <a href="tecnologias.html" class="active" title="Tecnologías" data-i18n="nav.technologies">Tecnologías</a>
+            <a href="formacion.html" title="Formación y experiencia laboral" data-i18n="nav.education">Formación</a>
+            <a href="contacto.html" title="Contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <form action="buscador.html" method="get" role="search" aria-label="Buscar en el sitio" data-i18n="search.label" data-i18n-attr="aria-label">
+            <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" data-i18n="search.placeholder" data-i18n-attr="placeholder" />
+            <button type="submit" data-i18n="search.submit">Buscar</button>
+        </form>
+    </header>
+
+    <p><a href="index.html" title="Página de inicio" data-i18n="technologies.breadcrumb_home">Inicio</a> >> <strong data-i18n="nav.technologies">Tecnologías</strong></p>
+
+
+    <main>
+        <section>
+            <h2 data-i18n="technologies.heading">Tecnologías que me interesan</h2>
+            <p data-i18n="technologies.intro">Aquí dejo algunas tecnologías interesantes con las que he trabajado o me gustaría trabajar.</p>
+
+            <article>
+                <h3 data-i18n="technologies.graphql">GraphQL</h3>
+                <p data-i18n="technologies.graphql_desc">GraphQL es un lenguaje de consulta y un runtime desarrollado por Facebook que permite a los clientes pedir exactamente 
+                    los datos que necesitan de una API, ni más ni menos. A diferencia de REST, reduce la sobrecarga de múltiples peticiones 
+                    y hace más eficiente la comunicación entre cliente y servidor, ofreciendo flexibilidad y mejor rendimiento en el consumo de datos.
+                </p>
+            </article>
+
+            
+            <article>
+                <h3 data-i18n="technologies.react">React</h3>
+                <p data-i18n="technologies.react_desc">React es una librería de JavaScript desarrollada por Meta para construir interfaces de usuario de forma declarativa y 
+                    eficiente. Se basa en componentes reutilizables y en un sistema de actualización reactivo que facilita la creación de 
+                    aplicaciones web dinámicas y escalables.
+                </p>
+            </article>
+
+            
+            <article>
+                <h3 data-i18n="technologies.tailwind">Tailwind CSS</h3>
+                <p data-i18n="technologies.tailwind_desc">Tailwind CSS es un framework de utilidades para CSS que permite diseñar interfaces rápidamente usando clases predefinidas 
+                    directamente en el HTML. Ofrece gran flexibilidad y evita escribir hojas de estilo personalizadas extensas, acelerando el 
+                    desarrollo y manteniendo el código más limpio.
+                </p>
+            </article>
+
+            
+            <article>
+                <h3 data-i18n="technologies.docker">Docker</h3>
+                <p data-i18n="technologies.docker_desc">Docker es una plataforma que permite empaquetar aplicaciones y sus dependencias en contenedores ligeros y portables. Estos 
+                    contenedores garantizan que el software se ejecute de manera consistente en cualquier entorno, facilitando el despliegue, 
+                    la escalabilidad y la integración en flujos de desarrollo modernos.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <img src="multimedia/graphql.png" alt="Logo de GraphQL" data-i18n="technologies.graphql_logo" data-i18n-attr="alt"/>
+            <img src="multimedia/react.png" alt="Logo de React" data-i18n="technologies.react_logo" data-i18n-attr="alt" />
+            <img src="multimedia/tailwind.png" alt="Logo de Tailwind CSS" data-i18n="technologies.tailwind_logo" data-i18n-attr="alt" />
+            <img src="multimedia/docker.png" alt="Logo de Docker" data-i18n="technologies.docker_logo" data-i18n-attr="alt" />
+        </aside>
+    </main>
+    <footer>
+        <p><span data-i18n="footer.copyright">© Daniel Suárez de la Roza</span></p>
+        <p data-i18n="footer.email">danisrzly@gmail.com</p>
+        <p>28 de noviembre de 2025</p>
+    </footer>
+
+    <script type="module" src="js/init.js"></script>
+</body>
+</html>

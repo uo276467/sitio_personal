@@ -1,0 +1,81 @@
+{
+  "banner": "Página personal",
+  "nav": {
+    "home": "Inicio",
+    "hobbies": "Aficiones",
+    "technologies": "Tecnologías",
+    "education": "Formación",
+    "contact": "Contacto"
+  },
+  "search": {
+    "placeholder": "Buscar...",
+    "label": "Buscar en el sitio",
+    "submit": "Buscar",
+    "results_title": "Resultados de búsqueda",
+    "empty_query": "Introduce un término de búsqueda en el campo superior.",
+    "no_results": "No se han encontrado coincidencias."
+  },
+  "index": {
+    "page_title": "Página de inicio",
+    "breadcrumb": "Estás en: ",
+    "about_me": "Sobre mí",
+    "about_text": "¡Hola! Soy Daniel Suárez. Nací en Gijón el 6 de febrero de 2001. Desde pequeño me han encantado los ordenadores y los videojuegos, razón por la cual decidí estudiar Ingeniería Informática del Software. Actualmente estoy cursando el Máster en Ingeniería Web de la Universidad de Oviedo.",
+    "personal_data": "Datos personales",
+    "full_name": "Nombre completo: Daniel Suárez de la Roza",
+    "birth_date": "Fecha de nacimiento: 6 de febrero de 2001",
+    "birth_place": "Lugar de nacimiento: Gijón, Asturias",
+    "age": "Edad: 24 años",
+    "email": "Correo electrónico: danisrzly@gmail.com",
+    "presentation_video": "Vídeo de presentación",
+    "profile_photo": "Foto de Daniel Suárez"
+  },
+  "hobbies": {
+    "page_title": "Aficiones",
+    "breadcrumb_home": "Inicio",
+    "heading": "Aficiones",
+    "intro": "Mi principal afición son los videojuegos. También me gusta ver series y películas, escuchar música y hacer planes con mis amigos.",
+    "videogames": "Videojuegos",
+    "videogames_image": "Imagen del videojuego The Legend of Zelda: Tears of the Kingdom",
+    "series_and_movies": "Series y películas",
+    "series_image": "Imagen de la serie One Piece"
+  },
+  "technologies": {
+    "page_title": "Tecnologías",
+    "breadcrumb_home": "Inicio",
+    "heading": "Tecnologías que me interesan",
+    "intro": "Aquí dejo algunas tecnologías interesantes con las que he trabajado o me gustaría trabajar.",
+    "graphql": "GraphQL",
+    "graphql_desc": "GraphQL es un lenguaje de consulta y un runtime desarrollado por Facebook que permite a los clientes pedir exactamente los datos que necesitan de una API, ni más ni menos. A diferencia de REST, reduce la sobrecarga de múltiples peticiones y hace más eficiente la comunicación entre cliente y servidor, ofreciendo flexibilidad y mejor rendimiento en el consumo de datos.",
+    "graphql_logo": "Logo de GraphQL",
+    "react": "React",
+    "react_desc": "React es una librería de JavaScript desarrollada por Meta para construir interfaces de usuario de forma declarativa y eficiente. Se basa en componentes reutilizables y en un sistema de actualización reactivo que facilita la creación de aplicaciones web dinámicas y escalables.",
+    "react_logo": "Logo de React",
+    "tailwind": "Tailwind CSS",
+    "tailwind_desc": "Tailwind CSS es un framework de utilidades para CSS que permite diseñar interfaces rápidamente usando clases predefinidas directamente en el HTML. Ofrece gran flexibilidad y evita escribir hojas de estilo personalizadas extensas, acelerando el desarrollo y manteniendo el código más limpio.",
+    "tailwind_logo": "Logo de Tailwind CSS",
+    "docker": "Docker",
+    "docker_desc": "Docker es una plataforma que permite empaquetar aplicaciones y sus dependencias en contenedores ligeros y portables. Estos contenedores garantizan que el software se ejecute de manera consistente en cualquier entorno, facilitando el despliegue, la escalabilidad y la integración en flujos de desarrollo modernos.",
+    "docker_logo": "Logo de Docker"
+  },
+  "education": {
+    "page_title": "Formación",
+    "breadcrumb_home": "Inicio",
+    "heading": "Formación y experiencia laboral",
+    "education_title": "Formación",
+    "degree": "Grado en Ingeniería Informática del Software",
+    "master": "Máster en Ingeniería Web",
+    "experience_title": "Experiencia laboral",
+    "internship": "Prácticas de empresa en GooApps S.L. (2025)"
+  },
+  "contact": {
+    "page_title": "Contacto",
+    "breadcrumb_home": "Inicio",
+    "heading": "Contacta conmigo",
+    "email_label": "Correo electrónico: ",
+    "phone_label": "Teléfono: "
+  },
+  "footer": {
+    "copyright": "© Daniel Suárez de la Roza",
+    "email": "danisrzly@gmail.com"
+  }
+}

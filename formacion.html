@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Daniel Suárez de la Roza"/>
+    <meta name="description" content="Página personal de Daniel"/>
+    <meta name="keywords" content="Daniel, datos, información, aficiones"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <script src="https://t.contentsquare.net/uxa/d3141bb8831b3.js"></script>
+
+    <title>Página personal</title>
+</head>
+
+<script type="module">
+
+import EmbeddedPageSdk from "https://app.realeye.io/sdk/js/testRunnerEmbeddableSdk-1.7.1.js"
+
+/**
+ * NOTICE: The SDK MUST be created when the UI is fully loaded and ready.
+ * So, if you are using (modern) frontend framework please use its proper event to create the SDK when everything is ready and fully rendered, instead of the vanilla JS "DOMContentLoaded" event.
+ */
+window.addEventListener("DOMContentLoaded", () => {
+   const debugMode = false;
+   const stimulusId = null; // Or Stimulus/Item UUID from RealEye Study, e.g. "61560b76-3d31-4f0e-b530-55bd8709aadb"
+   const forceRun = false;
+
+   const reSdk = new EmbeddedPageSdk(debugMode, stimulusId, forceRun)
+});
+
+document.getElementById('button-finish-test').addEventListener("click", () => reSdk.finishEyeTrackingTest())
+
+</script>
+
+<body>
+    <header>
+        <h1 data-i18n="banner">Página personal</h1>
+        <nav>
+            <a href="index.html" title="Inicio" data-i18n="nav.home">Inicio</a>
+            <a href="aficiones.html" title="Aficiones" data-i18n="nav.hobbies">Aficiones</a>
+            <a href="tecnologias.html" title="Tecnologías" data-i18n="nav.technologies">Tecnologías</a>
+            <a href="formacion.html" class="active" title="Formación y experiencia laboral" data-i18n="nav.education">Formación</a>
+            <a href="contacto.html" title="Contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <form action="buscador.html" method="get" role="search" aria-label="Buscar en el sitio" data-i18n="search.label" data-i18n-attr="aria-label">
+            <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" data-i18n="search.placeholder" data-i18n-attr="placeholder" />
+            <button type="submit" data-i18n="search.submit">Buscar</button>
+        </form>
+    </header>
+
+    <p><a href="index.html" title="Página de inicio" data-i18n="education.breadcrumb_home">Inicio</a> >> <strong data-i18n="nav.education">Formación</strong></p>
+
+    <main>
+        <section>
+            <h2 data-i18n="education.heading">Formación y experiencia laboral</h2>
+                
+            <article>
+                <h3 data-i18n="education.education_title">Formación</h3>
+                    <ul>
+                        <li data-i18n="education.degree">Grado en Ingeniería Informática del Software</li>
+                        <li data-i18n="education.master">Máster en Ingeniería Web</li>
+                    </ul>
+            </article> 
+
+            <article>
+                <h3 data-i18n="education.experience_title">Experiencia laboral</h3>
+                    <ul>
+                        <li data-i18n="education.internship">Prácticas de empresa en GooApps S.L. (2025)</li>
+                    </ul>
+            </article> 
+        </section>
+    </main>    
+    <footer>
+        <p><span data-i18n="footer.copyright">© Daniel Suárez de la Roza</span></p>
+        <p data-i18n="footer.email">danisrzly@gmail.com</p>
+        <p>28 de noviembre de 2025</p>
+    </footer>
+
+    <script type="module" src="js/init.js"></script>
+</body>
+</html>

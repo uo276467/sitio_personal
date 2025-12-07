@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="author" content="Daniel Suárez de la Roza"/>
+    <meta name="description" content="Buscador de la página personal"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+
+    <title>Buscador - Página personal</title>
+</head>
+<body>
+    <header>
+        <h1 data-i18n="banner">Página personal</h1>
+        <nav>
+            <a href="index.html" title="Inicio" data-i18n="nav.home">Inicio</a>
+            <a href="aficiones.html" title="Aficiones" data-i18n="nav.hobbies">Aficiones</a>
+            <a href="tecnologias.html" title="Tecnologías" data-i18n="nav.technologies">Tecnologías</a>
+            <a href="formacion.html" title="Formación y experiencia laboral" data-i18n="nav.education">Formación</a>
+            <a href="contacto.html" title="Contacto" data-i18n="nav.contact">Contacto</a>
+        </nav>
+        <form action="buscador.html" method="get" role="search" aria-label="Buscar en el sitio" data-i18n="search.label" data-i18n-attr="aria-label">
+            <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" data-i18n="search.placeholder" data-i18n-attr="placeholder" />
+            <button type="submit" data-i18n="search.submit">Buscar</button>
+        </form>
+    </header>
+
+    <main>
+        <section>
+            <h2 data-i18n="search.results_title">Resultados de búsqueda</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p><span data-i18n="footer.copyright">© Daniel Suárez de la Roza</span></p>
+        <p data-i18n="footer.email">danisrzly@gmail.com</p>
+        <p>28 de noviembre de 2025</p>
+    </footer>
+
+    <script type="module" src="js/init.js"></script>
+    <script type="module" src="js/buscador.js"></script>
+</body>
+</body>
+</html>

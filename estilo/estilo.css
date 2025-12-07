@@ -1,0 +1,134 @@
+/* Especifidad 0 0 1 */
+body {
+    margin: 0em;
+    background-color: #b1d8b7;
+    color: #2f5233;
+    font-family: Arial, sans-serif;
+}
+
+/* Especifidad 0 0 1 */
+main {
+    margin: 1em;
+}
+
+/* Especifidad 0 0 1 */
+header {
+    padding: 1em 1em 0em 0em;
+    background-color: #76b947;
+    /* Herencia color de body */
+    text-align: center;
+}
+
+/* Make header a positioning context so the search form can be placed relative to it */
+header { position: relative; }
+
+/* Especifidad 0 0 1 */
+nav {
+    background-color: #94C973;
+    /* Herencia color de body */
+    padding: 1em;
+}
+
+/* Especifidad 0 0 2 */
+nav a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #2f5233;
+    /* Herencia background-color de header */
+}
+
+/* Especifidad 0 1 0 */
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #1b2e1a;
+    /* Herencia background-color de header */
+}
+
+/* Especifidad 0 0 1 */
+img {
+    width: 14em;
+    height: auto;
+}
+
+/* Especifidad 0 0 2 */
+article img {
+    height: 14em;
+    object-fit: cover;
+    border-radius: 10em;
+}
+
+/* Especifidad 0 0 1 */
+h1 {
+    font-size: 3em;
+}
+
+/* Especifidad 0 0 1 */
+h2 {
+    font-size: 2.5em;
+}
+
+/* Especifidad 0 0 1 */
+footer {
+    background-color: #94C973;
+     /* Herencia color de body */
+}
+
+/* Buscador */
+
+/* Selector de idioma */
+header [role="group"] {
+    display: flex;
+    gap: 0.3rem;
+}
+
+header [role="group"] button {
+    padding: 0.35em 0.6em;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background-color: rgba(255,255,255,0.1);
+    color: #2f5233;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+header [role="group"] button[aria-pressed="true"] {
+    background-color: #1b2e1a;
+    color: #fff;
+}
+
+header form[role="search"] {
+    position: absolute;
+    right: 1rem;
+    bottom: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background: rgba(255,255,255,0.06);
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+header form[role="search"] input[type="search"] {
+    padding: 0.4em 0.6em;
+    border-radius: 4px;
+    border: 1px solid rgba(0,0,0,0.1);
+    min-width: 12rem;
+}
+header form[role="search"] button {
+    padding: 0.35em 0.7em;
+    border-radius: 4px;
+    border: none;
+    background-color: #1b2e1a;
+    color: #fff;
+    cursor: pointer;
+}
+header form[role="search"] button:hover { opacity: 0.9; }
+
+/* Resultados de búsqueda: articulos con atributo data-result */
+article[data-result="true"] { margin: 0.8em 0; padding: 0.6em; background: rgba(255,255,255,0.6); border-radius: 6px; }
+article[data-result="true"] h3 { margin: 0 0 0.4em 0; }
+
+/* Resaltado de coincidencias */
+mark { background: #ffe58a; padding: 0 0.1em; }
