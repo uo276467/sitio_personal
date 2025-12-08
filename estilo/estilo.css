@@ -106,6 +106,7 @@ header form[role="search"] button {
 
 label {
     visibility: hidden;
+    color: #000
 }
 
 /* Resultados de búsqueda */
