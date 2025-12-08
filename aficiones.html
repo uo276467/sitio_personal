@@ -34,8 +34,9 @@
                 <a href="formacion.html" title="Formación y experiencia laboral" data-i18n="nav.education">Formación</a>
                 <a href="contacto.html" title="Contacto" data-i18n="nav.contact">Contacto</a>
             </nav>
-            <form action="buscador.html" method="get" role="search" aria-label="Buscar en el sitio" data-i18n="search.label" data-i18n-attr="aria-label">
-                <input type="search" name="q" placeholder="Buscar..." aria-label="Buscar" data-i18n="search.placeholder" data-i18n-attr="placeholder" />
+            <form action="buscador.html" method="get" role="search">
+                <label for="search" data-i18n="search.label">Buscar en el sitio</label>
+                <input id="search" type="search" name="q" placeholder="Buscar..." data-i18n="search.placeholder" data-i18n-attr="placeholder" />
                 <button type="submit" data-i18n="search.submit">Buscar</button>
             </form>
         </article>

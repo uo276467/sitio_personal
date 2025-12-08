@@ -104,6 +104,10 @@ header form[role="search"] button {
     color: #fff;
 }
 
+label {
+    visibility: hidden;
+}
+
 /* Resultados de búsqueda */
 
 /* Especifidad 0 1 1 */
