@@ -10,6 +10,12 @@ main {
     flex: 1;
 }
 
+header article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /* Especifidad 0 0 1 */
 nav {
     display: flex;
@@ -29,4 +35,96 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+/* Especificidad 001 */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Especificidad 001 */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Selector de idioma */
+
+/* Especifidad 0 1 1 */
+header [role="group"] {
+    display: flex;
+    gap: 0.3rem;
+}
+
+/* Especifidad 0 1 2 */
+header [role="group"] button {
+    padding: 0.35em 0.6em;
+}
+
+/* Buscador */
+
+/* Especifidad 0 1 2 */
+header form[role="search"] {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 6px;
+}
+
+/* Especifidad 0 2 3 */
+header form[role="search"] input[type="search"] {
+    padding: 0.4em 0.6em;
+    min-width: 12em;
+}
+
+/* Especifidad 0 1 3 */
+header form[role="search"] button {
+    padding: 0.35em 0.7em;
+}
+
+/* Resultados de búsqueda */
+
+/* Especifidad 0 1 1 */
+article[data-result="true"] { 
+    margin: 0.8em 0;
+    padding: 0.6em;
+}
+
+/* Especifidad 0 1 2 */
+article[data-result="true"] h3 { 
+    margin-top: 0.4em;
+}
+
+/* Especifidad 0 0 1 */
+mark {
+    padding: 0 0.1em;
+}
+
+@media (min-width: 320px) and (max-width: 799px) {
+    /* Especificidad 0 0 2 */
+    header article {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Especificidad 0 0 1 */
+    nav {
+        flex-direction: column;
+    }
+
+    /* Especificidad 0 0 2 */
+    aside img {
+        max-width: 25%;
+        height: auto;
+    }
+
+    /* Especificidad 0 0 1 */
+    footer {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
 }
