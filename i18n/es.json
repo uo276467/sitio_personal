@@ -72,7 +72,8 @@
     "breadcrumb_home": "Inicio",
     "heading": "Contacta conmigo",
     "email_label": "Correo electrónico: ",
-    "phone_label": "Teléfono: "
+    "phone_label": "Teléfono: ",
+    "github_label": "GitHub: "
   },
   "footer": {
     "copyright": "© Daniel Suárez de la Roza",

@@ -71,8 +71,8 @@ footer {
 
 /* Selector de idioma */
 
-/* Especifidad 0 1 2 */
-header [role="group"] button {
+/* Especifidad 0 0 2 */
+aside button {
     border-radius: 0.5em;
     border: 0.1em;
     border-color: #1b2e1a;
@@ -82,8 +82,8 @@ header [role="group"] button {
     font-weight: bold;
 }
 
-/* Especifidad 0 2 2 */
-header [role="group"] button[aria-pressed="true"] {
+/* Especifidad 0 1 2 */
+aside button[aria-pressed="true"] {
     background-color: #1b2e1a;
     color: #fff;
 }
@@ -104,6 +104,7 @@ header form[role="search"] button {
     color: #fff;
 }
 
+/* Especifidad 0 0 1 */
 label {
     visibility: hidden;
     color: #2f5233;

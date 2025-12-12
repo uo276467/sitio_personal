@@ -76,6 +76,5 @@ class I18n {
     }
 }
 
-window.i18n = new I18n();
-
-export default I18n;
+const i18n = new I18n();
+window.i18n = i18n;

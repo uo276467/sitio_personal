@@ -2,11 +2,30 @@ class LanguageSelector {
     constructor() {
         this.supportedLanguages = ['es', 'en'];
         this.currentLanguage = window.i18n?.currentLanguage || 'es';
+        this.initializeOnDOMReady();
+    }
+
+    initializeOnDOMReady() {
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', () => this.init());
+        } else {
+            this.init();
+        }
+    }
+
+    async init() {
+        if (window.i18n) {
+            await window.i18n.init();
+            window.i18n.translate();
+        }
+        const main = document.querySelector('main');
+        if (main) {
+            this.mount(main);
+        }
     }
 
     createSelector() {
-        const selector = document.createElement('div');
-        selector.setAttribute('role', 'group');
+        const selector = document.createElement('aside');
         selector.setAttribute('aria-label', 'Seleccionar idioma');
 
         this.supportedLanguages.forEach(lang => {
@@ -57,12 +76,7 @@ class LanguageSelector {
     }
 }
 
-window.addEventListener('DOMContentLoaded', () => {
-    const header = document.querySelector('header');
-    if (header) {
-        const languageSelector = new LanguageSelector();
-        languageSelector.mount(header);
-    }
-});
-
-export default LanguageSelector;
+// Instanciar cuando el script se carga
+(function() {
+    const languageSelector = new LanguageSelector();
+})();
